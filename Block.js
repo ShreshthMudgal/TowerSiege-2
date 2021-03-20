@@ -32,7 +32,7 @@ class Block{
         push();
         this.Visibility = this.Visibility-5;
         tint(255,this.Visibility);
-        image(this.image,this.body.position.x,this.body.position.y,50,50);
+        image(this.image,this.body.position.x,this.body.position.y,30,40);
         pop();
         }
       }
