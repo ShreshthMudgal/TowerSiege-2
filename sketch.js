@@ -113,6 +113,11 @@ function draw(){
     
     slingshot.display();
     drawSprites();
+    textSize(20);
+    fill(255,255,255);
+    stroke(255,255,255)
+    strokeWeight(1);
+    text("Destroy the boxes with the help of polygon",225,50);
 }
 
 function mouseDragged(){
@@ -122,4 +127,11 @@ function mouseDragged(){
 
 function mouseReleased(){
     slingshot.fly();
+}
+
+function keyPressed(){
+if(keyCode === 32){
+    slingshot.attach(this.polygon);
+}
+
 }
